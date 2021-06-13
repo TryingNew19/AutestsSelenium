@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 
+#параметр, который в случае неожиданного прохождения теста, помеченного как xfail, отметит в отчете этот тест как упавший
 @pytest.mark.xfail(strict=True)
 def test_succeed():
     assert True
